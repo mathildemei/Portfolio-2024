@@ -1,8 +1,84 @@
 ---
 import "../styles/generel.css";
+import "../styles/lineup.css";
 import MainLayout from "../layouts/MainLayout.astro";
+import Cards from "../components/Cards.astro";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Lineup">
-  <h2>Hej</h2>
+  <h2>THURSDAY</h2>
+  <div class="artist_cards">
+    <Cards artist="ÂME" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/âme.png"
+        alt="Picture of the band Âme"
+      />
+    </Cards>
+    <Cards artist="KÖLSCH" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/kölsch.png"
+        alt="Picture of the artist Kölsch"
+      />
+    </Cards>
+    <Cards artist="MIRA" stage="TRIBUNEN">
+      <img
+        src="../../public/img/lineup/mira.png"
+        alt="Picture of the artist Mira"
+      />
+    </Cards>
+  </div>
+
+  <!-- Artist rows -->
+  <div class="artist_date">
+    <h3>MANEGEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview">MCADAM</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SHAARUP</Button
+      >
+    </div>
+    <h3>TRIBUNEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >HAENSEN & GRETEL</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">MADS LORENZEN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SCHWOFDROSSEL</Button
+      >
+    </div>
+    <h3>BALKONEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >WORLDLY PRES</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">BOOGIE ROOKIE</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">FUTTE RICO</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">MORTEN MCCOY</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">NAYAN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">STORM</Button
+      >
+    </div>
+  </div>
 </MainLayout>

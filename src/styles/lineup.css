@@ -1,0 +1,31 @@
+h2 {
+    margin-bottom: 20px;
+}
+.artist_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    filter: blur(2px);
+}
+
+.artist_date {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artist_row {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+
