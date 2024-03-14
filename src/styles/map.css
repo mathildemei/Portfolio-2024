@@ -1,0 +1,36 @@
+/* Styling af map inkl. elementer */
+.background_map {
+    position: relative;
+}
+
+.manegen_web {
+    position: absolute;
+    top: 70%;
+    left: 12%;
+}
+
+.karrusel {
+    position: absolute;
+    top: 61%;
+    left: 27%;
+}
+
+.tribunen_web {
+    position: absolute;
+    top: 33%;
+    left: 38.5%;
+}
+
+.balkonen_web {
+    position: absolute;
+    top: 55%;
+    left: 76%;
+}
+
+@media screen and (min-width: 700px) {
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
