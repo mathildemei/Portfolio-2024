@@ -6,7 +6,7 @@
 
 /* Farver og fonte */
 :root {
-    --backgroundColor: #090909; 
+    --backgroundColor: #090909;
     --textColor: #FFFFFF;
 }
 
@@ -22,7 +22,3 @@ body {
     color: var(--textColor);
     margin: 30px;
 }
-
-
-
-
