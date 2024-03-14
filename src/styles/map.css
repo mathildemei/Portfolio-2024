@@ -5,27 +5,62 @@
 
 .manegen_web {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 12%;
 }
 
 .karrusel {
     position: absolute;
-    top: 71%;
+    top: 61%;
     left: 27%;
 }
 
 .tribunen_web {
     position: absolute;
-    top: 43%;
+    top: 33%;
     left: 38.5%;
 }
 
 .balkonen_web {
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 76%;
 }
+
+#manegen {
+    position: absolute;
+    width: 70%;
+    aspect-ratio: 147/131;
+    top: 50%;
+    left: 0%;
+    background-image: url(../../public/img/map/manegen_popup.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#tribunen {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 180/131;
+    top: 50%;
+    left: 0%;
+    background-image: url(../../public/img/map/tribuen_popup.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#balkonen {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 170/156;
+    top: 70%;
+    left: 0%;
+    background-image: url(../../public/img/map/balkonen_popup.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
 
 @media screen and (min-width: 700px) {
     .grid_1-1-1 {
