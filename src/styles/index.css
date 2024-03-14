@@ -1,0 +1,14 @@
+.grid_1-2{
+     display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    align-items: center;
+} 
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}

@@ -2,6 +2,31 @@
 import "../styles/generel.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Card from "../components/Cards.astro";
+import "../styles/index.css";
 ---
 
-<MainLayout title="Karrusel Festival" />
+<MainLayout title="Karrusel Festival">
+  <img src="/public/index.webp" alt="Koncert billede" />
+
+  <!-- card -->
+
+  <section class="grid_1-2">
+    <Button size="box" type="web">About Karrusel Festival</Button>
+    <img src="/public/lys_karrusel.svg" alt="" />
+  </section>
+
+  <section >
+    <div class="flex">
+    <h2>Location</h2>
+    <Button size="box" type="web">Full Map</Button>
+</div>
+
+
+
+  </section>
+
+
+
+
+</MainLayout>
