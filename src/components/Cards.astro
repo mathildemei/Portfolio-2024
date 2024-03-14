@@ -1,5 +1,35 @@
 ---
-
+const { artist, stage } = Astro.props;
 ---
 
-<style></style>
+<article>
+  <a href="/singleview">
+    <figure class="card_background">
+      <slot />
+    </figure>
+    <h3 class="h3_2">{artist}</h3>
+    <h4>{stage}</h4></a
+  >
+</article>
+
+<style>
+  .card_background {
+    background-image: url("../../public/img/lineup/card_background.png");
+    width: fit-content;
+    padding: 27px;
+  }
+  figure {
+    margin-bottom: 10px;
+  }
+  figure:hover {
+    opacity: 0.7;
+  }
+  .h3_2 {
+    font-family: "Rubik Glitch";
+    font-weight: 400;
+    font-size: 32px;
+  }
+  h4 {
+    margin-bottom: 60px;
+  }
+</style>
