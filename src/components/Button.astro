@@ -1,0 +1,34 @@
+---
+const { size, type } = Astro.props;
+---
+
+<button class={size + " " + type}><slot /></button>
+
+<style>
+  button {
+    color: #ffffff;
+  }
+
+  .web {
+    padding: 12px 42px;
+  }
+  .mobil {
+    padding: 12px 24px;
+  }
+
+  .box {
+    background: linear-gradient(to right, #5c11fb 0%, #ec4dfe 100%);
+    border-radius: 5px;
+  }
+  .box:hover {
+    box-shadow: 4px 3px 10px #ff1cc0;
+  }
+  .box:active {
+    box-shadow: -4px -4px 10px #515151;
+  }
+
+  .no_box {
+    background: none;
+    border: none;
+  }
+</style>

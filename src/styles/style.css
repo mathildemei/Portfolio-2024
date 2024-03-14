@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Farver og fonte */
+:root {
+    --backgroundColor: #090909; 
+    --textColor: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Rubik Glitch';
+    src: url(../);
+}
+
+/* Generel styling */
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    margin: 30px;
+}
+
+
+
+
