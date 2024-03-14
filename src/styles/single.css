@@ -1,4 +1,11 @@
-img {
-  max-width: 1440 px;
-  max-height: 1423 px;
+@media screen and (min-width: 700px) {
+  img {
+    max-width: 1440 px;
+    max-height: 1423 px;
+  }
+
+  .single_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
