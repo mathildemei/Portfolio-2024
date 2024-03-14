@@ -21,11 +21,18 @@ h2 {
 }
 
 .artist_row {
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 28px;
     align-items: baseline;
     margin-bottom: 50px;
+}
+.illustration_wave {
+    position: absolute;
+    bottom: -165px;
+    z-index: -1;
+    width: 200%;
 }
 
 
