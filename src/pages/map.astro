@@ -7,22 +7,31 @@ import "../styles/map.css";
 <MainLayout title="Map">
   <div class="background_map">
     <img src="../../public/img/map/map.png" alt="map" />
+    <!-- Scener -->
+    <img
+      id="manegen_stage"
+      src="../../public/img/map/manegen_web.png"
+      alt="manegen stage"
+    />
+    <img id="karrusel" src="../../public/img/map/karrusel.png" alt="karrusel" />
+    <img
+      id="tribunen_stage"
+      src="../../public/img/map/tribunen_web.png"
+      alt="tribunen stage"
+    />
+    <img
+      id="balkonen_stage"
+      src="../../public/img/map/balkonen_web.png"
+      alt="balkonen stage"
+    />
+    <!-- Programmer -->
+    <div id="manegen_program" class="hide"></div>
+    <div id="tribunen_program" class="hide"></div>
+    <div id="balkonen_program" class="hide"></div>
   </div>
-  <div class="manegen_web">
-    <img src="../../public/img/map/manegen_web.png" alt="manegen stage" />
-  </div>
-  <div class="karrusel">
-    <img src="../../public/img/map/karrusel.png" alt="karrusel" />
-  </div>
-  <div class="tribunen_web">
-    <img src="../../public/img/map/tribunen_web.png" alt="tribunen stage" />
-  </div>
-  <div class="balkonen_web">
-    <img src="../../public/img/map/balkonen_web.png" alt="balkonen stage" />
-  </div>
-  <div class="manegen hide"></div>
-  <div class="tribunen hide"></div>
-  <div class="balkonen hide"></div>
+
+  <div></div>
+
   <article class="grid_1-1-1">
     <div>
       <h4>How to get there?</h4>
@@ -57,28 +66,69 @@ import "../styles/map.css";
   </article>
 </MainLayout>
 
-<!-- <script>
-  window.addEventListener("load", PopUp);
+<script>
+  // Definerer variabler
+  const manegen_stage = document.querySelector("#manegen_stage");
+  const manegen_program = document.querySelector("#manegen_program");
 
-  function PopUp() {
-    console.log("hej");
+  const tribunen_stage = document.querySelector("#tribunen_stage");
+  const tribunen_program = document.querySelector("#tribunen_program");
 
-    hideAllScreens;
+  const balkonen_stage = document.querySelector("#balkonen_stage");
+  const balkonen_program = document.querySelector("#balkonen_program");
 
-    document.querySelector(".magegen").addEventListener("click", clickManegen);
+  // Ved klik på scenen, gå til funktionen showProgram
+  manegen_stage.addEventListener("click", showProgramManegen);
+
+  tribunen_stage.addEventListener("click", showProgramTribunen);
+
+  balkonen_stage.addEventListener("click", showProgramBalkonen);
+
+  function showProgramManegen() {
+    // Viser programbox
+    manegen_program.classList.remove("hide");
+    manegen_program.classList.add("manegen_program");
+
+    // Fjerner eventListener der lytter til klik programbox
+    manegen_program.removeEventListener("click", showProgramManegen);
+    manegen_stage.removeEventListener("click", showProgramManegen);
+
+    // Ved klik på programbox, gå til funktionen mapDefault
+    manegen_program.addEventListener("click", mapDefault);
+    manegen_stage.addEventListener("click", mapDefault);
   }
 
-  function clickManegen() {
-    document
-      .querySelector(".magegen")
-      .removeEventListener("click", clickManegen);
+  function showProgramTribunen() {
+    tribunen_program.classList.remove("hide");
+    tribunen_program.classList.add("tribunen_program");
 
-    document.querySelector(".magegen").classList.add("forsvind");
+    tribunen_program.removeEventListener("click", showProgramTribunen);
+    tribunen_stage.removeEventListener("click", showProgramTribunen);
+
+    tribunen_program.addEventListener("click", mapDefault);
+    tribunen_stage.addEventListener("click", mapDefault);
   }
 
-  function hideAllScreens() {
-    document.querySelector(".magegen").classList.add("hide");
-    document.querySelector(".tribunen").classList.add("hide");
-    document.querySelector(".balkonen").classList.add("hide");
+  function showProgramBalkonen() {
+    balkonen_program.classList.remove("hide");
+    balkonen_program.classList.add("balkonen_program");
+
+    balkonen_program.removeEventListener("click", showProgramBalkonen);
+    balkonen_stage.removeEventListener("click", showProgramBalkonen);
+
+    balkonen_program.addEventListener("click", mapDefault);
+    balkonen_stage.addEventListener("click", mapDefault);
   }
-</script> -->
+
+  // Tilføjer hide, og dermed fjerner programbox igen
+  function mapDefault() {
+    manegen_program.classList.add("hide");
+    manegen_stage.addEventListener("click", showProgramManegen);
+
+    tribunen_program.classList.add("hide");
+    tribunen_stage.addEventListener("click", showProgramTribunen);
+
+    balkonen_program.classList.add("hide");
+    balkonen_stage.addEventListener("click", showProgramBalkonen);
+  }
+</script>
