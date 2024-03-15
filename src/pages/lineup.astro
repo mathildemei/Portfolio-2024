@@ -1,8 +1,243 @@
 ---
 import "../styles/generel.css";
+import "../styles/lineup.css";
 import MainLayout from "../layouts/MainLayout.astro";
+import Cards from "../components/Cards.astro";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Lineup">
-  <h2>Hej</h2>
+  <!-- Program Thursday -->
+  <h2 class="h2_2">THURSDAY</h2>
+  <div class="artist_cards">
+    <Cards artist="ÂME" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/âme.png"
+        alt="Picture of the band Âme"
+      />
+    </Cards>
+    <Cards artist="KÖLSCH" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/kölsch.png"
+        alt="Picture of the artist Kölsch"
+      />
+    </Cards>
+    <Cards artist="MIRA" stage="TRIBUNEN">
+      <img
+        src="../../public/img/lineup/mira.png"
+        alt="Picture of the artist Mira"
+      />
+    </Cards>
+  </div>
+
+  <!-- Artist rows -->
+  <div class="artist_date">
+    <h3>MANEGEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview">MCADAM</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SHAARUP</Button
+      >
+    </div>
+    <h3>TRIBUNEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >HAENSEN & GRETEL</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">MADS LORENZEN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SCHWOFDROSSEL</Button
+      >
+      <img
+        class="illustration_wave"
+        src="../../public/pynt_boelger.svg"
+        alt=""
+      />
+    </div>
+    <h3>BALKONEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >WORLDLY PRES</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">BOOGIE ROOKIE</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">FUTTE RICO</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">MORTEN MCCOY</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">NAYAN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">STORM</Button
+      >
+    </div>
+  </div>
+
+  <!-- Program Friday -->
+  <h2 class="h2_2">FRIDAY</h2>
+  <div class="artist_cards">
+    <Cards artist="ACID PAULI" stage="TRIBUNEN">
+      <img
+        src="../../public/img/lineup/acid_pauli.png"
+        alt="Picture of the band Âme"
+      />
+    </Cards>
+    <Cards artist="HAAI" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/haai.png"
+        alt="Picture of the artist Kölsch"
+      />
+    </Cards>
+    <Cards artist="SKIN ON SKIN" stage="MANEGEN">
+      <img
+        src="../../public/img/lineup/skin_on_skin.png"
+        alt="Picture of the artist Mira"
+      />
+    </Cards>
+  </div>
+
+  <!-- Artist rows -->
+  <div class="artist_date">
+    <h3>MANEGEN</h3>
+    <div class="artist_row">
+      <img class="illustration_woman" src="../../public/dame_glow.svg" alt="" />
+      <Button size="web" type="no_box" link_to="/singleview">NARCISS</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">VIXEN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">VTSS</Button
+      >
+    </div>
+    <h3>TRIBUNEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >DJUMA SOUNDSYSTEM</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">ESKI</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SATORI</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">VÄM</Button
+      >
+    </div>
+    <h3>BALKONEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >CHICAGO PRES</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">COCKWHORE & MACHO</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">HARRISON HEAT</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SÍOFRA</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">TIGHT CHERRY</Button
+      >
+    </div>
+  </div>
+
+  <!-- Program Saturday -->
+  <div class="artist_date">
+    <h2 class="h2_2">SATURDAY</h2>
+    <div class="artist_cards">
+      <Cards artist="FJAAK DJ SET" stage="MANEGEN">
+        <img
+          src="../../public/img/lineup/fjaak_dj_set.png"
+          alt="Picture of the band Âme"
+        />
+      </Cards>
+      <Cards artist="RSS DISCO" stage="TRIBUNEN">
+        <img
+          src="../../public/img/lineup/rss_disco.png"
+          alt="Picture of the artist Kölsch"
+        />
+      </Cards>
+      <Cards artist="RICHIE HAWTIN" stage="MANEGEN">
+        <img
+          src="../../public/img/lineup/richie_hawtin.png"
+          alt="Picture of the artist Mira"
+        />
+      </Cards>
+    </div>
+
+    <!-- Artist rows -->
+    <h3>MANEGEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview">ANNA LOGIC</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">DJ SEA VIEW</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">SPFDJ</Button
+      >
+    </div>
+    <h3>TRIBUNEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >JUDITH VAN WATERKANT</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">KATZ-K</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">POWERSTRANGER</Button
+      >
+    </div>
+    <h3>BALKONEN</h3>
+    <div class="artist_row">
+      <Button size="web" type="no_box" link_to="/singleview"
+        >ALL WE NEED PRESS</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">DEE BROWN</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">MARSHMELLO</Button
+      ><span class="dot"></span><Button
+        size="web"
+        type="no_box"
+        link_to="/singleview">OKINE</Button
+      >
+    </div>
+  </div>
 </MainLayout>

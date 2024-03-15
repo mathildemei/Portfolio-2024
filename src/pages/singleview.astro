@@ -1,11 +1,16 @@
 ---
 import "../styles/generel.css";
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/single.css";
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
-<MainLayout title="Kunstner">
+<MainLayout>
   <article>
     <img src="../public/singleview_artist.jpg" alt="" />
+    <div class="grey_frame"></div>
     <div class="single_grid">
       <div class="info_flex">
         <h3>LOCATION</h3>
@@ -18,8 +23,8 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
       <div class="titel_flex">
         <h1>Artist Name</h1>
-        <h2></h2>
-        <button></button>
+        <h2>Not many DJs can claim to experience as meteoric, grassroots ascent as SPFDJ. Having established a remarkable energy, style and attitude on the underground techno circuits of both London and Berlin, she is known for inspiring debauchery and sweat-soaked hedonism on an international scale.</h2>
+        <button>See all Artist</button>
       </div>
     </div>
   </article>

@@ -1,4 +1,60 @@
-img {
-  max-width: 1440 px;
-  max-height: 1423 px;
+@media screen and (min-width: 700px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  article {
+    position: relative;
+    width: 1440px;
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .grey_frame {
+    width: 1440px;
+    height: 502px;
+    background-color: #090909;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .single_grid {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+  }
+  .info_flex,
+  .titel_flex {
+    z-index: 4;
+  }
+  .info_flex {
+    margin-top: -502px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 400%;
+    left: 7%;
+  }
+  .titel_flex {
+    margin-top: -502px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    right: 10%;
+  }
 }

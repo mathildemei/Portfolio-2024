@@ -1,19 +1,23 @@
 ---
-const { size, type } = Astro.props;
+const { size, type, link_to } = Astro.props;
 ---
 
-<button class={size + " " + type}><slot /></button>
+<a href={link_to}><button class={size + " " + type}><slot /></button></a>
 
 <style>
   button {
     color: #ffffff;
+    cursor: pointer;
+    border: none;
   }
 
   .web {
     padding: 12px 42px;
+    font-size: 18px;
   }
   .mobil {
     padding: 12px 24px;
+    font-size: 16px;
   }
 
   .box {
@@ -30,5 +34,11 @@ const { size, type } = Astro.props;
   .no_box {
     background: none;
     border: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  .no_box:hover {
+    color: #ec4dfe;
+    text-shadow: 4px 3px 10px #ff1cc0;
   }
 </style>

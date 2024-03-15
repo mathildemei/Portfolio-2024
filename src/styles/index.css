@@ -1,0 +1,49 @@
+.grid_1-2{
+     display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    align-items: center;
+} 
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+#img {
+    z-index: -1;
+    position: relative;
+    margin-top: -8em;
+    max-width: auto;
+  
+
+}
+h1{
+    position: absolute;
+    margin-left: 1rem;
+}
+#h2_index{
+    position: absolute;
+    font-family: 'Rubik Glitch';
+    font-weight: 400;
+    font-size: 20px;
+    margin-top:5em;
+}
+
+.SeeAllArtist_button{
+    align-self: right;
+
+}
+
+ @media screen and (min-width: 700px){
+ 
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 2em ;
+    padding: 2em;   
+     z-index: 1;
+    margin-top: -10%;
+}}
