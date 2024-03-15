@@ -1,13 +1,16 @@
 /* Styling af map inkl. elementer */
 .background_map {
     position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 /* Scener */
 #manegen_stage {
     position: absolute;
-    top: 44%;
-    left: 8%;
+    top: 38%;
+    left: 20%;
 }
 #manegen_stage:hover {
     cursor: pointer;
@@ -16,14 +19,14 @@
 
 #karrusel {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 30%;
+    left: 32%;
 }
 
 #tribunen_stage {
     position: absolute;
-    top: 6%;
-    left: 27%;
+    top: -10%;
+    left: 40%;
 }
 #tribunen_stage:hover {
     cursor: pointer;
@@ -32,8 +35,8 @@
 
 #balkonen_stage {
     position: absolute;
-    top: 28%;
-    left: 56%;
+    top: 18%;
+    right: 25%;
 }
 #balkonen_stage:hover {
     cursor: pointer;
@@ -43,10 +46,10 @@
 /* Programmer */
 #manegen_program {
     position: absolute;
-    width: 30%;
+    width: 25%;
     aspect-ratio: 147/131;
-    top: 10%;
-    left: 20%;
+    top: 20%;
+    left: 32%;
     background-image: url(../../public/img/map/manegen_popup.png);
     background-size: 100%;
     z-index: 1;
@@ -57,10 +60,10 @@
 
 #tribunen_program {
     position: absolute;
-    width: 30%;
+    width: 25%;
     aspect-ratio: 180/131;
-    top: -10%;
-    left: 38%;
+    top: -20%;
+    left: 50%;
     background-image: url(../../public/img/map/tribuen_popup.png);
     background-size: 100%;
     z-index: 1;
@@ -71,10 +74,10 @@
 
 #balkonen_program {
     position: absolute;
-    width: 30%;
+    width: 25%;
     aspect-ratio: 170/156;
     top: 0%;
-    left: 64%;
+    right: -1%;
     background-image: url(../../public/img/map/balkonen_popup.png);
     background-size: 100%;
     z-index: 1;
@@ -92,7 +95,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 }
 
@@ -107,50 +110,56 @@
     }
 
     /* Scener */
-#manegen_stage {
-    top: 44%;
-    left: 8%;
-}
 
-#karrusel {
-    top: 40%;
-    left: 20%;
-}
+    #manegen_stage {
+        top: 24%;
+        left: 1%;
+        width: 23%;
+    }
+    #manegen_stage:hover {
+        width: 23%;
+    }
 
-#tribunen_stage {
-    top: 6%;
-    left: 27%;
-}
-#tribunen_stage:hover {
-    cursor: pointer;
-    width: 9%;
-}
+    #karrusel {
+        top: 26%;
+        left: 24%;
+        width: 12%;
+    }
 
-#balkonen_stage {
-    top: 28%;
-    left: 56%;
-}
-#balkonen_stage:hover {
-    cursor: pointer;
-    width: 6.5%;
-}
+    #tribunen_stage {
+        top: -19%;
+        left: 32%;
+        width: 18%;
+    }
+    #tribunen_stage:hover {
+        width: 18%;
+    }
 
-/* Programmer */
-#manegen_program {
-    width: 30%;
-    top: 10%;
-    left: 20%;
-}
+    #balkonen_stage {
+        top: 10%;
+        right: 10%;
+        width: 15%;
+    }
+    #balkonen_stage:hover {
+        width: 15%;
+    }
 
-#tribunen_program {
-    width: 30%;
-    top: -10%;
-    left: 38%;
-}
+    /* Programmer */
+    #manegen_program {
+        width: 55%;
+        top: -4%;
+        left: 24%;
+    }
 
-#balkonen_program {
-    width: 30%;
-    top: 0%;
-    left: 64%;
-}
+    #tribunen_program {
+        width: 60%;
+        top: -39%;
+        left: 48%;
+    }
+
+    #balkonen_program {
+        width: 60%;
+        top: -30%;
+        left: 17%;
+    }
 }
