@@ -2,6 +2,74 @@
 import "../styles/generel.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Card from "../components/Cards.astro";
+import "../styles/index.css";
+import Cards from "../components/Cards.astro";
 ---
 
-<MainLayout title="Karrusel Festival" />
+<MainLayout>
+
+  <div class="hero-image">
+    <img src="" alt="">
+    <div class="hero-text">
+      <h1>Karrusel Festival</h1>
+      <p id="h2_index">3 days of house, disco and tecno in the woods</p>
+    </div>
+    <div class="hero-button">
+      <Button size="box" type="web" link_to="/map">See Full Map</Button>
+     <Button size="box" type="web" link_to="/lineup">See Lineup</Button>
+    </div>
+  </div>
+
+<div class="card">
+  <Card artist="SKIN ON SKIN" stage="MANEGEN">
+    <img
+    src="../../public/img/lineup/skin_on_skin.png"
+    alt="Picture of the artist Mira"
+  />
+  </Card>
+  <Card artist="RSS DISCO" stage="TRIBUNEN">
+    <img
+    src="../../public/img/lineup/rss_disco.png"
+    alt="Picture of the artist Kölsch"
+  />
+  </Card>
+  <Card artist="ÂME" stage="MANEGEN">
+    <img
+    src="../../public/img/lineup/âme.png"
+    alt="Picture of the band Âme"
+  /> 
+  </Card>
+</div>
+<div class="SeeAllArtist_button button_flex">
+ <div class="arrow">&#10230;</div>
+ <Button size="box" type="web" link_to="/lineup">See all artist</Button>
+</div>
+
+
+
+  <section class="grid_1-2">
+    <div class="button_flex">
+      <div class="arrow">&#10230;</div>
+      <Button size="box" type="web" link_to="/about">About Karrusel Festival</Button>
+    </div>
+    <img src="/public/lys_karrusel.svg" alt="" />
+  </section>
+
+  <section >
+    <div class="flex">
+    <h2>Location</h2>
+    <div class="button_flex">
+      <div class="arrow">&#10230;</div>
+      <Button size="box" type="web" link_to="/map"> Full Map</Button>
+    </div>
+</div>
+
+
+
+  </section>
+
+
+
+
+</MainLayout>

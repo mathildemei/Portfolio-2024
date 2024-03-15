@@ -4,7 +4,9 @@
 }
 .artist_cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
+    gap: 10px;
 }
 .dot {
     height: 15px;
@@ -44,3 +46,14 @@
 }
 
 
+
+
+
+
+/* Mobil version */
+
+@media screen and (max-width: 600px) {
+
+
+
+}
