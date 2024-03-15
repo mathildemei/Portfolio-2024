@@ -34,7 +34,10 @@ h1 {
     font-size: 82px;
 }
 
-h2, h3, h4, p {
+h2,
+h3,
+h4,
+p {
     font-family: proxima-nova, sans-serif;
     font-style: normal;
 }
@@ -62,4 +65,12 @@ p {
 a {
     color: var(--textColor);
     text-decoration: none;
+}
+
+a link {
+    font-family: proxima-nova, sans-serif;
+}
+
+a :hover {
+    background: linear-gradient(to right, #5c11fb 0%, #ec4dfe 100%);
 }
