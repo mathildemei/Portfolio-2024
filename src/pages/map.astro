@@ -8,18 +8,21 @@ import "../styles/map.css";
   <div class="background_map">
     <img src="../../public/img/map/map.png" alt="map" />
   </div>
-  <div class="manegen_web" id="manegen">
+  <div class="manegen_web">
     <img src="../../public/img/map/manegen_web.png" alt="manegen stage" />
   </div>
   <div class="karrusel">
     <img src="../../public/img/map/karrusel.png" alt="karrusel" />
   </div>
-  <div class="tribunen_web" id="tribunen">
+  <div class="tribunen_web">
     <img src="../../public/img/map/tribunen_web.png" alt="tribunen stage" />
   </div>
-  <div class="balkonen_web" id="balkonen">
+  <div class="balkonen_web">
     <img src="../../public/img/map/balkonen_web.png" alt="balkonen stage" />
   </div>
+  <div class="manegen hide"></div>
+  <div class="tribunen hide"></div>
+  <div class="balkonen hide"></div>
   <article class="grid_1-1-1">
     <div>
       <h4>How to get there?</h4>
@@ -54,11 +57,7 @@ import "../styles/map.css";
   </article>
 </MainLayout>
 
-<script>
-  const Manegen = document.querySelector("#magegen");
-  const Tribunen = document.querySelector("#tribunen");
-  const Balkonen = document.querySelector("#balkonen");
-
+<!-- <script>
   window.addEventListener("load", PopUp);
 
   function PopUp() {
@@ -66,20 +65,20 @@ import "../styles/map.css";
 
     hideAllScreens;
 
-    document.querySelector("#magegen").addEventListener("click", clickManegen);
+    document.querySelector(".magegen").addEventListener("click", clickManegen);
   }
 
   function clickManegen() {
     document
-      .querySelector("#magegen")
+      .querySelector(".magegen")
       .removeEventListener("click", clickManegen);
 
-    document.querySelector("#magegen").classList.add("forsvind");
+    document.querySelector(".magegen").classList.add("forsvind");
   }
 
   function hideAllScreens() {
-    document.querySelector("#magegen").classList.add("hide");
-    document.querySelector("#tribunen").classList.add("hide");
-    document.querySelector("#balkonen").classList.add("hide");
+    document.querySelector(".magegen").classList.add("hide");
+    document.querySelector(".tribunen").classList.add("hide");
+    document.querySelector(".balkonen").classList.add("hide");
   }
-</script>
+</script> -->

@@ -27,7 +27,7 @@
     left: 76%;
 }
 
-#manegen {
+.manegen {
     position: absolute;
     width: 70%;
     aspect-ratio: 147/131;
@@ -35,10 +35,10 @@
     left: 0%;
     background-image: url(../../public/img/map/manegen_popup.png);
     background-size: 100%;
-    overflow: hidden;
+    z-index: 1;
 }
 
-#tribunen {
+.tribunen {
     position: absolute;
     width: 50%;
     aspect-ratio: 180/131;
@@ -46,10 +46,10 @@
     left: 0%;
     background-image: url(../../public/img/map/tribuen_popup.png);
     background-size: 100%;
-    overflow: hidden;
+    z-index: 1;
 }
 
-#balkonen {
+.balkonen {
     position: absolute;
     width: 50%;
     aspect-ratio: 170/156;
@@ -57,10 +57,13 @@
     left: 0%;
     background-image: url(../../public/img/map/balkonen_popup.png);
     background-size: 100%;
-    overflow: hidden;
+    z-index: 1;
 }
 
+.hide {
+    display: none;
 
+}
 
 @media screen and (min-width: 700px) {
     .grid_1-1-1 {
