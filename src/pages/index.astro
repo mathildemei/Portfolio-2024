@@ -17,7 +17,7 @@ import Cards from "../components/Cards.astro";
     </div>
     <div class="hero-button">
       <Button size="box" type="web" link_to="/map">See Full Map</Button>
-      <Button size="box" type="web" link_to="/lineup">See Lineup</Button>
+     <Button size="box" type="web" link_to="/lineup">See Lineup</Button>
     </div>
   </div>
 
@@ -41,21 +41,28 @@ import Cards from "../components/Cards.astro";
   /> 
   </Card>
 </div>
-<div class="SeeAllArtist_button">
-  <Button size="box" type="web" link_to="/lineup">See all artist</Button>
+<div class="SeeAllArtist_button button_flex">
+ <div class="arrow">&#10230;</div>
+ <Button size="box" type="web" link_to="/lineup">See all artist</Button>
 </div>
 
 
 
   <section class="grid_1-2">
-    <Button size="box" type="web" link_to="/about">About Karrusel Festival</Button>
+    <div class="button_flex">
+      <div class="arrow">&#10230;</div>
+      <Button size="box" type="web" link_to="/about">About Karrusel Festival</Button>
+    </div>
     <img src="/public/lys_karrusel.svg" alt="" />
   </section>
 
   <section >
     <div class="flex">
     <h2>Location</h2>
-    <Button size="box" type="web" link_to="/map"> Full Map</Button>
+    <div class="button_flex">
+      <div class="arrow">&#10230;</div>
+      <Button size="box" type="web" link_to="/map"> Full Map</Button>
+    </div>
 </div>
 
 
