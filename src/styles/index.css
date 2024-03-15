@@ -1,49 +1,123 @@
-.grid_1-2{
-     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 1rem;
-    align-items: center;
-} 
+/* The hero image */
+.hero-image {
+    background-image: url(index.webp);
+    margin-left: -2em;
+    margin-right: -2em;
+    height: 1131px;
+    margin-top: -8em;
+    z-index: -1;
+     /* Position: Baggrundsbilledet */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+    /*Placering af tekst  */
+    .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+     color: white;
+  }
+  /* "Gemmer" knappen når sitet vises i desktop */
+  .hero-button{
+    display: none;
+  }
+  @media (max-width: 790px) {
+      .hero-image {
+          background-image: url(index.webp);
+          margin-left: -2em;
+          margin-right: -2em;
+          height: 765px;
+          margin-top: -8em;
+          z-index: -1;
+          /* Position: Baggrundsbilledet */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        /*Placering af tekst  */
+        .hero-text {
+          text-align: left;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        /* viser knappen i mobil view */
+        .hero-button{
+            display: contents;
+            position: absolute;
+            display: inline-block;
+            padding-top: 2em;       
+            top: 65%;
+            left: 40%;      
+            transform: translate(-50%, -50%);
+        }
+        .hero-button button{
+            margin-top: 1em;
+        }
+  }
 
+#h2_index{
+    font-family: 'Rubik Glitch';
+    font-weight: 400;
+    font-size: 20px;
+}
 
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-}
-#img {
-    z-index: -1;
-    position: relative;
-    margin-top: -8em;
-    max-width: auto;
-  
+} 
 
-}
-h1{
-    position: absolute;
-    margin-left: 1rem;
-}
-#h2_index{
-    position: absolute;
-    font-family: 'Rubik Glitch';
-    font-weight: 400;
-    font-size: 20px;
-    margin-top:5em;
+.flex{
+    display: none;
 }
 
-.SeeAllArtist_button{
-    align-self: right;
-
+button{
+    margin: 1em auto; 
 }
-
+.button_flex{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.arrow{
+    font-size: 2em;
+}
  @media screen and (min-width: 700px){
- 
-.card {
+    .SeeAllArtist_button{
+        position: absolute;
+        right: 7%;
+        margin: -2em;
+    }
+    .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 2em ;
     padding: 2em;   
      z-index: 1;
-    margin-top: -10%;
-}}
+    margin-top: -10em;
+}
+.grid_1-2{
+    margin-top: 2em;
+    display: grid;
+   grid-template-columns: 1fr 2fr;
+   padding: 1rem;
+   align-items: center;
+} 
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+} 
+}
