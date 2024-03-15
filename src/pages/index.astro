@@ -8,33 +8,41 @@ import Cards from "../components/Cards.astro";
 ---
 
 <MainLayout>
-  <h1>Karrusel Festival</h1>
-  <h2 id="h2_index">3 days of house, disco and tecno in the woods</h2>
-  <img id="img" src="/public/index.webp" alt="Koncert billede" />
+
+  <div class="hero-image">
+    <img src="" alt="">
+    <div class="hero-text">
+      <h1>Karrusel Festival</h1>
+      <p id="h2_index">3 days of house, disco and tecno in the woods</p>
+    </div>
+    <div class="hero-button">
+      <Button size="box" type="web" link_to="/map">See Full Map</Button>
+      <Button size="box" type="web" link_to="/lineup">See Lineup</Button>
+    </div>
+  </div>
 
 <div class="card">
-  <Cards artist="SKIN ON SKIN" stage="MANEGEN">
+  <Card artist="SKIN ON SKIN" stage="MANEGEN">
     <img
     src="../../public/img/lineup/skin_on_skin.png"
     alt="Picture of the artist Mira"
   />
-  </Cards>
-  <Cards artist="RSS DISCO" stage="TRIBUNEN">
+  </Card>
+  <Card artist="RSS DISCO" stage="TRIBUNEN">
     <img
     src="../../public/img/lineup/rss_disco.png"
     alt="Picture of the artist Kölsch"
   />
-  </Cards>
-  <Cards artist="ÂME" stage="MANEGEN">
+  </Card>
+  <Card artist="ÂME" stage="MANEGEN">
     <img
     src="../../public/img/lineup/âme.png"
     alt="Picture of the band Âme"
   /> 
-  </Cards>
+  </Card>
 </div>
 <div class="SeeAllArtist_button">
   <Button size="box" type="web" link_to="/lineup">See all artist</Button>
-
 </div>
 
 
