@@ -1,15 +1,32 @@
+.artist_img {
+  background-image: url("../public/singleview_artist.jpg");
+  margin-left: -2em;
+  margin-right: -2em;
+  height: 1131px;
+  margin-top: -8em;
+  z-index: -1;
+  /* Position: Baggrundsbilledet */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 @media screen and (min-width: 700px) {
   body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   h2 {
     font-size: 24px;
   }
 
   article {
+    flex-grow: 1;
     position: relative;
-
     height: 100vh;
   }
 
@@ -17,7 +34,6 @@
     background-image: url("../public/singleview_artist.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
     top: 0;
@@ -34,7 +50,6 @@
     background-color: #090909;
     opacity: 0.5;
     position: absolute;
-    bottom: 0;
     left: 0;
     top: 60%;
   }
@@ -45,6 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 20px;
+    margin-bottom: 100px;
     opacity: 1;
   }
   .info_flex,
@@ -67,5 +83,39 @@
     top: 500%;
     left: 30%;
     right: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .single_grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 3em;
+    margin: 5%;
+  }
+  .titel_flex {
+    grid-row: 1/2;
+    gap: 2em;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .artist_img {
+    .hero-image {
+      background-image: url("../public/.artist_img.jpg");
+      margin-left: -2em;
+      margin-right: -2em;
+      height: 765px;
+      margin-top: -8em;
+      z-index: -1;
+      /* Position: Baggrundsbilledet */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
   }
 }
