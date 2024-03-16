@@ -104,18 +104,22 @@
     font-size: 20px;
   }
   .artist_img {
-    .hero-image {
-      background-image: url("../public/.artist_img.jpg");
-      margin-left: -2em;
-      margin-right: -2em;
-      height: 765px;
-      margin-top: -8em;
-      z-index: -1;
-      /* Position: Baggrundsbilledet */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
+    background-image: url("../public/singleview_artist.jpg");
+    margin-left: -2em;
+    margin-right: -2em;
+    height: 765px;
+    margin-top: -8em;
+    z-index: -1;
+    /* Position: Baggrundsbilledet */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  Button {
+    width: 159px;
+    height: 37px;
+    margin-left: 25%;
+    margin-top: 10%;
   }
 }
