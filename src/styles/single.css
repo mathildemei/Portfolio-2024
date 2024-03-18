@@ -1,17 +1,3 @@
-.artist_img {
-  background-image: url("../public/singleview_artist.jpg");
-  margin-left: -2em;
-  margin-right: -2em;
-  height: 1131px;
-  margin-top: -8em;
-  z-index: -1;
-  /* Position: Baggrundsbilledet */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 @media screen and (min-width: 700px) {
   body {
     margin: 0;
