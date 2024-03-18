@@ -1,136 +1,136 @@
 ---
 
-  
 ---
+
 <header class="header">
   <nav class="navbar">
-      <a href="index.html" class="nav-logo"> <img src="Logofarve.webp" alt=""> </a>
-      <ul class="nav-menu">
-          <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-              <a href="/map" class="nav-link">Map</a>
-          </li>
-          <li class="nav-item">
-              <a href="/lineup" class="nav-link">Lineup</a>
-          </li>
-          <li class="nav-item">
-              <a href="/singleview" class="nav-link">Singleview</a>
-          </li>
-          <li class="nav-item">
-              <a href="/about" class="nav-link">About</a>
-          </li>
-      </ul>
-      <div>
-        <p>22-24 august 2024</p>
-      </div>
-      <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
+    <a href="index.html" class="nav-logo">
+      <img src="../../img/Logofarve.webp" alt="" />
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/map" class="nav-link">Map</a>
+      </li>
+      <li class="nav-item">
+        <a href="/lineup" class="nav-link">Lineup</a>
+      </li>
+      <li class="nav-item">
+        <a href="/singleview" class="nav-link">Singleview</a>
+      </li>
+      <li class="nav-item">
+        <a href="/about" class="nav-link">About</a>
+      </li>
+    </ul>
+    <div>
+      <p>22-24 august 2024</p>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
 </header>
 
-
 <style>
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0rem;
     margin-bottom: 1em;
-}
+  }
 
-li {
+  li {
     list-style: none;
-}
+  }
 
-a {
+  a {
     text-decoration: none;
-}
+  }
 
-.bar {
+  .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-  -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; 
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: #ffffff;
-}
-.nav-menu {
+  }
+  .nav-menu {
     display: flex;
     justify-content: space-between;
-/*     align-items: center;
- */}
+    /*     align-items: center;
+ */
+  }
 
-/*  .nav-item {
+  /*  .nav-item {
     margin-left: 1rem;
 }  */
 
-.nav-link{
+  .nav-link {
     font-size: 1rem;
     font-weight: 100;
     color: #ffffff;
-}
+  }
 
-.nav-link:hover{
+  .nav-link:hover {
     color: #ffffff;
     text-decoration: underline;
-}
+  }
 
-.nav-logo img {
-  max-width: 80px;
-}
-    .nav-menu {
-        position: fixed;
-        z-index: 2;
-        right: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #090909;
-        width: 50%;
-        border-radius: 1px;
-        text-align: center;
-        transition: 0.3s;
-    }
+  .nav-logo img {
+    max-width: 80px;
+  }
+  .nav-menu {
+    position: fixed;
+    z-index: 2;
+    right: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #090909;
+    width: 50%;
+    border-radius: 1px;
+    text-align: center;
+    transition: 0.3s;
+  }
 
-    .nav-menu.active {
-        right: 0;
-    }
+  .nav-menu.active {
+    right: 0;
+  }
 
-    .nav-item {
-        margin: 2rem 0;
-    }
+  .nav-item {
+    margin: 2rem 0;
+  }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 </style>
 <script>
-
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
-  
+
   hamburger.addEventListener("click", mobileMenu);
-  
+
   function mobileMenu() {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
   }
-      </script>
+</script>
