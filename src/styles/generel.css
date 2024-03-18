@@ -63,7 +63,6 @@ a {
     color: var(--textColor);
     text-decoration: none;
 }
-
 /* Mobil version */
 
 @media screen and (max-width: 600px) {
