@@ -1,0 +1,46 @@
+---
+import Button from "./Button.astro";
+const { data } = Astro.props;
+---
+
+<a href={`artist/${data.slug}`}>
+  <article>
+    <figure class="card_background">
+      <img src=`../../img/lineup/${data.image}` alt="" />
+    </figure>
+    <h3 class="h3_2">{data.name}</h3>
+    <h4>{data.stage}</h4>
+  </article>
+</a>
+
+<style>
+  .card_background {
+    background-image: url("../../img/lineup/card_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    padding: 27px;
+  }
+  figure {
+    margin-bottom: 10px;
+  }
+  figure img {
+    object-fit: cover;
+    align-self: stretch;
+    height: 400px;
+    width: 350px;
+    filter: grayscale(100%);
+  }
+  figure:hover {
+    opacity: 0.7;
+  }
+  .h3_2 {
+    font-family: "Rubik Glitch";
+    font-weight: 400;
+    font-size: 32px;
+  }
+  h4 {
+    margin-bottom: 60px;
+  }
+</style>
