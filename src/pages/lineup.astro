@@ -1,0 +1,59 @@
+---
+import "../styles/generel.css";
+import "../styles/lineup.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Cards from "../components/Cards.astro";
+import Button from "../components/Button.astro";
+import ArtistCards from "../components/ArtistCards.astro";
+
+const data = await fetch(
+  "https://qfcbmxwfnjdobywkwfei.supabase.co/rest/v1/lineup?order=id.asc",
+  {
+    method: "GET",
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFmY2JteHdmbmpkb2J5d2t3ZmVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0ODkyNDAsImV4cCI6MjAyNjA2NTI0MH0.4phUCO3QegbetzxWRquRHEWOYbF8TctgcydbEjOxnxI",
+    },
+  }
+).then((res) => res.json());
+---
+
+<MainLayout title="Lineup">
+  <!-- Program Thursday -->
+  <h2 class="h2_2">THURSDAY</h2>
+  <section class="artist_cards">
+    {
+      data
+        .filter((artist) => artist.date === "THURSDAY")
+        .map((artist) => {
+          return <ArtistCards data={artist} />;
+        })
+    }
+    <img class="illustration_wave" src="../../pynt_boelger.svg" alt="" />
+  </section>
+
+  <!-- Program Friday -->
+  <h2 class="h2_2">FRIDAY</h2>
+  <section class="artist_cards">
+    {
+      data
+        .filter((artist) => artist.date === "FRIDAY")
+        .map((artist) => {
+          return <ArtistCards data={artist} />;
+        })
+    }
+    <img class="illustration_woman" src="../../dame_glow.svg" alt="" />
+  </section>
+
+  <!-- Program Saturday -->
+  <h2 class="h2_2">SATURDAY</h2>
+  <section class="artist_cards">
+    {
+      data
+        .filter((artist) => artist.date === "SATURDAY")
+        .map((artist) => {
+          return <ArtistCards data={artist} />;
+        })
+    }
+  </section>
+</MainLayout>
