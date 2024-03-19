@@ -3,7 +3,19 @@ import "../styles/generel.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Cards.astro";
+import ArtistCards from "../components/ArtistCards.astro";
 import "../styles/index.css";
+
+const data = await fetch(
+  "https://qfcbmxwfnjdobywkwfei.supabase.co/rest/v1/lineup?order=id.asc&limit=3",
+  {
+    method: "GET",
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFmY2JteHdmbmpkb2J5d2t3ZmVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0ODkyNDAsImV4cCI6MjAyNjA2NTI0MH0.4phUCO3QegbetzxWRquRHEWOYbF8TctgcydbEjOxnxI",
+    },
+  }
+).then((res) => res.json());
 ---
 
 <MainLayout>
@@ -20,21 +32,13 @@ import "../styles/index.css";
   </div>
 
   <div class="card">
-    <Card artist="SKIN ON SKIN" stage="MANEGEN">
-      <img
-        src="../../img/lineup/skin_on_skin.png"
-        alt="Picture of the artist Mira"
-      />
-    </Card>
-    <Card artist="RSS DISCO" stage="TRIBUNEN">
-      <img
-        src="../../img/lineup/rss_disco.png"
-        alt="Picture of the artist Kölsch"
-      />
-    </Card>
-    <Card artist="ÂME" stage="MANEGEN">
-      <img src="../../img/lineup/âme.png" alt="Picture of the band Âme" />
-    </Card>
+    {
+      data
+        .filter((artist) => artist.date === "THURSDAY")
+        .map((artist) => {
+          return <ArtistCards data={artist} />;
+        })
+    }
   </div>
   <div class="SeeAllArtist_button button_flex">
     <div class="arrow">&#10230;</div>

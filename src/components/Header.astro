@@ -91,7 +91,7 @@
     max-width: 80px;
   }
   .nav-menu {
-    position: fixed;
+    /* position: fixed;
     z-index: 2;
     right: -100%;
     flex-direction: column;
@@ -103,7 +103,12 @@
     padding-left: 100px;
     padding-right: 100px;
     margin-top: -80px;
-    padding-bottom: 1000px;
+    padding-bottom: 1000px; */
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    right: -100%;
+    width: 30%;
   }
 
   .nav-menu.active {
