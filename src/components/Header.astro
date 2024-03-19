@@ -7,23 +7,25 @@
     <a href="index.html" class="nav-logo">
       <img src="../../Logofarve.webp" alt="" />
     </a>
-    <ul class="nav-menu">
-      <li class="nav-item">
-        <a href="/" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/map" class="nav-link">Map</a>
-      </li>
-      <li class="nav-item">
-        <a href="/lineup" class="nav-link">Lineup</a>
-      </li>
-      <li class="nav-item">
-        <a href="/singleview" class="nav-link">Singleview</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link">About</a>
-      </li>
-    </ul>
+    <section>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/map" class="nav-link">Map</a>
+        </li>
+        <li class="nav-item">
+          <a href="/lineup" class="nav-link">Lineup</a>
+        </li>
+        <li class="nav-item">
+          <a href="/singleview" class="nav-link">Singleview</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about" class="nav-link">About</a>
+        </li>
+      </ul>
+    </section>
     <div>
       <p>22-24 august 2024</p>
     </div>
@@ -39,13 +41,13 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 0rem;
     margin-bottom: 1em;
   }
 
   li {
     list-style: none;
+    border-bottom: solid #ffffff 3px;
   }
 
   a {
@@ -61,11 +63,10 @@
     transition: all 0.4s ease-in-out;
     background-color: #ffffff;
   }
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
-    /*     align-items: center;
- */
   }
 
   /*  .nav-item {
@@ -73,14 +74,14 @@
 }  */
 
   .nav-link {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 100;
     color: #ffffff;
   }
 
   .nav-link:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #ec4dfe;
+    text-shadow: 4px 3px 10px #ff1cc0;
   }
 
   .nav-logo img {
@@ -90,26 +91,33 @@
     position: fixed;
     z-index: 2;
     right: -100%;
-    top: 5rem;
     flex-direction: column;
     background-color: #090909;
     width: 50%;
     border-radius: 1px;
-    text-align: center;
+    text-align: left;
     transition: 0.3s;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -80px;
+    padding-bottom: 1000px;
   }
 
   .nav-menu.active {
     right: 0;
+    height: 560px;
+    padding-top: 20%;
   }
 
   .nav-item {
     margin: 2rem 0;
+    /* margin-top: 150px; */
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+    z-index: 2;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
