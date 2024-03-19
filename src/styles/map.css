@@ -53,7 +53,7 @@
     aspect-ratio: 147/131;
     top: 20%;
     left: 32%;
-    background-image: url(../../img/map_webp/manegen_popup.webp);
+    background-image: url(../../img/map/manegen_popup.png);
     background-size: 100%;
     z-index: 1;
 }
@@ -68,7 +68,7 @@
     aspect-ratio: 180/131;
     top: -20%;
     left: 50%;
-    background-image: url(../../img/map_webp/tribuen_popup.webp);
+    background-image: url(../../img/map/tribuen_popup.png);
     background-size: 100%;
     z-index: 1;
 }
@@ -83,7 +83,7 @@
     aspect-ratio: 170/156;
     top: 0%;
     right: -1%;
-    background-image: url(../../img/map_webp/balkonen_popup.webp);
+    background-image: url(../../img/map/balkonen_popup.png);
     background-size: 100%;
     z-index: 1;
 }
