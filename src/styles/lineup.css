@@ -30,8 +30,8 @@
 }
 .illustration_woman {
   position: absolute;
-  top: 250%;
-  right: 100px;
+  top: 243%;
+  right: 250px;
   z-index: -1;
   width: 30%;
 }
